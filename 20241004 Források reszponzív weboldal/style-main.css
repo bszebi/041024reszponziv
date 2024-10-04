@@ -1,0 +1,386 @@
+body {
+	margin: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+figure {
+	margin: 0;
+}
+
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+
+
+/*--------------------------------------------------------------
+Header:
+--------------------------------------------------------------*/
+
+.masthead {
+	padding: 0 1em;
+	
+	border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+header {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+}
+header .trigger {
+    position: fixed;
+    left: 1em;
+    top: 1em;
+    padding: 0.5em 1em;
+    background-color: black;
+    color: white;
+    border: none;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+/*--------------------------------------------------------------
+Menu:
+--------------------------------------------------------------*/
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -14em;
+    width: 14em;
+    height: 100%;
+    background-color: black;
+    color: white;
+    padding: 2em;
+    z-index: 100;
+    transition: left 0.3s ease-in-out;
+}
+.reveal .menu {
+    left: 0;
+}
+
+/*--------------------------------------------------------------
+Navigation:
+--------------------------------------------------------------*/
+
+
+.main-nav {
+	padding: 1em;
+	font-size: 1.1em;
+	color: white;
+    background-color: hsl(0, 0%, 10%);
+}
+
+.trigger {
+    display: block;
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    padding: .5em 1em;
+    background-color: hsl(0, 0%, 10%);
+    color: white;
+    border: none;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.reveal .trigger{
+	margin-left: 0em;
+}
+
+.trigger:hover {
+	outline: 2px dotted hsl(0, 0%, 10%);
+}
+
+.main-nav ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.main-nav a {
+	display: block;
+	padding: .4em 1em;
+	color: white;
+	text-decoration: none;
+}
+
+.main-nav a:hover {
+	text-decoration: underline;
+}
+
+.reveal .main-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+/*--------------------------------------------------------------
+Cards:
+--------------------------------------------------------------*/
+
+.cards {
+	max-width: 25em;
+	margin: 1em auto;
+	padding: 0;
+	list-style-type: none;
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+
+}
+.card {
+    display: flex;
+    gap: 1em;
+}
+.card img {
+    width: 100px;
+    height: auto;
+}
+
+.cards a {
+	display: block;
+	margin-bottom: 1em;
+	text-decoration: none;
+}
+.card-content {
+    flex-grow: 1;
+}
+
+.caption {
+	padding: 1em;
+	font-size: 90%;
+	color: black;
+}
+
+.caption-title {
+	margin: 0;
+	font-size: 1.4em;
+	line-height: 1em;
+}
+
+.caption p {
+	margin-top: .5em;
+	margin-bottom: 0;
+}
+
+.cards a:focus .caption,
+.cards a:hover .caption {
+	background: hsl(0, 0%, 97%);
+}
+
+
+/*--------------------------------------------------------------
+Sidebar:
+--------------------------------------------------------------*/
+.sidebar {
+    position: fixed;
+    right: 0;
+    width: 15em;
+    height: 100%;
+    padding: 2em;
+    background-color: #f8f8f8;
+}
+
+.marine-awareness {
+    background-color: aqua;
+    margin-bottom: 1em;
+}
+
+.marine-awareness:last-child {
+    background-color: coral;
+}
+
+/*--------------------------------------------------------------
+Footer:
+--------------------------------------------------------------*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.colophon {
+	padding: 2em;
+	background: hsl(0, 0%, 10%);
+	color: white;
+	text-align: center;
+}
+
+.colophon a {
+	color: white;
+}
+
+.colophon a:hover,
+.colophon a:focus {
+	border-bottom: 1px solid white;
+}
+.masthead h1 {
+    text-align: center;
+}
+@media (max-width: 78em) {
+    main {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (min-width: 60em) {
+    .cards {
+        grid-template-columns: 25em 25em;
+    }
+}
+
+/*
+
+Header Styling 
+
+Menu styling 
+
+
+Main content styling 
+
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.card {
+    display: flex;
+    gap: 1em;
+}
+
+.card img {
+    width: 100px;
+    height: auto;
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+Right Aside Styling 
+.sidebar {
+    position: fixed;
+    right: 0;
+    width: 15em;
+    height: 100%;
+    padding: 2em;
+    background-color: #f8f8f8;
+}
+
+.marine-awareness {
+    background-color: aqua;
+    margin-bottom: 1em;
+}
+
+.marine-awareness:last-child {
+    background-color: coral;
+}
+
+Footer styling 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+/*--------------------------------
+
+27em:
+.site{
+	position: relative;
+	left: -14em;
+	overflow-x: hidden;
+	..................
+}
+
+.cards {
+			margin: 0 auto;
+			padding: 1em;
+		}
+.card {
+			margin: 1em 0;
+			padding: .5em;
+			..........
+		}
+
+.reveal {
+			left: 0;
+		}
+.trigger {
+			position: fixed;
+			...........
+			top: 2em;
+			left: 0em;
+			transition: left .6s;
+		}
+
+		.reveal .trigger{
+			left: 12.5em;
+		}
+
+60em:
+
+		.cards {
+			max-width: none;
+			margin: 1em 0;
+			..........
+			grid-gap: 1em
+		}
+		.card {
+			margin: 0;
+		}
+----------------------------------*/

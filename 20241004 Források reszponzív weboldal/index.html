@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shift-in off-canvas navigation with CSS Grid</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Source+Sans+Pro:400,400i,600,600i" rel="stylesheet">
+    <link rel="stylesheet" href="style-main.css" type="text/css" media="all">
+	<script src="functions.js" defer></script>
+</head>
+
+<body class="site">
+    <header class="masthead">
+        <h1 class="site-title">MARINE TRIPS</h1>
+    </header><!-- .masthead -->
+
+	<section class="main-nav">
+		<button class="trigger">Open menu</button>
+
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Resources</a></li>
+				<li><a href="#">Seaworld</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</section><!-- .main-nav -->
+
+    <main id="content" class="main-area">
+        <ul class="cards">
+            <li class="card-item double">
+                <a href="#">
+                    <figure class="card">
+                        <img src="images/galapagos3.jpg" alt="Dolphin">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Climate change</h3>
+							<p>It's making oceans hotter, promoting acidification, and making it harder for marine life to breathe by reducing dissolved oxygen levels. </p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#">
+                    <figure class="card">
+                        <img src="images/galapagos2.jpg" alt="Dolphin">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Reduce our footprint</h3>
+							<p>We can reduce our own carbon footprint and help decelerate climate change by making smart choices.</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#">
+                    <figure class="card">
+                        <img src="images/galapagos1.jpg" alt="Dolphin">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Plastic Pollution</h3>
+							<p>We can all help by refusing single-use plastics such as straws, cutlery, and food containers.  </p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#">
+                    <figure class="card">
+                        <img src="images/galapagos4.jpg" alt="Yellow fish">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Sustainable Seafood</h3>
+							<p>Long line fishing is extremely disruptive to our oceans.  </p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#">
+                    <figure class="card">
+                        <img src="images/galapagos5.jpg" alt="Octopus">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Fisheries subsidies</h3>
+							<p>Every year, governments spend billions on fisheries subsidies, the majority of which directly accelerate harmful overfishing. </p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#">
+                    <figure class="card">
+                        <img src="images/galapagos6.jpg" alt="Seahorse">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Fisheries subsidies</h3>
+							<p>Subsidies lead to too many fishing fleets and vessels that can remain out at sea longer and decimate populations in certain areas.</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+			<li class="card-item">
+                <a href="#">
+                    <figure class="card">
+                        <img src="images/galapagos1.jpg" alt="Dolphin">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Plastic Pollution</h3>
+							<p> Don’t support businesses that are using single-use plastics.</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="card-item double">
+                <a href="#">
+                    <figure class="card">
+                        <img src="images/galapagos2.jpg" alt="Dolphin">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Reduce our footprint</h3>
+							<p>We can reduce our own carbon footprint and help decelerate climate change by making smart choices.</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#">
+                    <figure class="card">
+                        <img src="images/galapagos3.jpg" alt="Dolphin">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Climate change</h3>
+							<p>It's making oceans hotter, promoting acidification, and making it harder for marine life to breathe by reducing dissolved oxygen levels. </p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#">
+                    <figure class="card">
+                        <img src="images/galapagos4.jpg" alt="Yellow fish">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Sustainable Seafood</h3>
+							<p>It can trap thousands of by-catch animals, and nets are often lost at sea and become death traps for many animals. </p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#">
+                    <figure class="card">
+                        <img src="images/galapagos5.jpg" alt="Octopus">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Fisheries subsidies</h3>
+							<p>Every year, governments spend billions on fisheries subsidies, the majority of which directly accelerate harmful overfishing. </p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li class="card-item">
+                <a href="#">
+                    <figure class="card">
+                        <img src="images/galapagos6.jpg" alt="Seahorse">
+                        <figcaption class="caption">
+                            <h3 class="caption-title">Fisheries subsidies</h3>
+							<p>Subsidies lead to too many fishing fleets and vessels that can remain out at sea longer and decimate populations in certain areas.</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+
+        </ul>
+    </main>
+
+	<section class="sidebar">
+		<aside class="twin">
+			<h2 class="content-title">Marine awarness retreats</h2>
+			<p>We are an organization focused on educating and raising awareness about the importance of our ocean’s ecosystems. We create life-altering experiences that literally change perceptions and perspectives. Join us for an incredible trip that will educate and forever change you.</p>
+		</aside>
+		<aside class="twin">
+			<h2 class="content-title">Get to know us</h2>
+			<p>MAR has been organizing small ocean wildlife expeditions for 12 years. We keep our groups small to minimize our impact on the areas we visit and to ensure the animals are not stressed or overwhelmed. This also ensures that our guests can maximize time with the animals. Our company is a tight knit group of conservationists and experts in their fields. All of our employees are passionate about wildlife and conservation. We are all marine biologists and ocean aficionados, so we can give you lots of information, and believe me, we have a lot to share. We consider each other 'Ohana': a Hawaiian term meaning "family". By the end of your journey you will be part of the MAR Ohana. </p>
+		</aside>
+	</section><!-- .twins -->
+
+	<footer class="colophon">
+		<aside>All photos: <a href="https://gurushots.com" target="_blank" rel="nofollow">Guru</a>.</aside>
+        <aside>For more information, visit <a href="https://gurushots.com/learning" target="_blank" rel="nofollow">Photo Learning</a>.</aside>
+    </footer>
+
+</body>
+
+</html>
